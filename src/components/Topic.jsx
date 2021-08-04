@@ -20,8 +20,6 @@ export const Topic = ({
           autoFocus
           onChange={valueTo(setTopic)}
           onKeyDown={event => {
-            console.log(event.key)
-
             if (event.key === "Enter") {
               addTopic()
             }
