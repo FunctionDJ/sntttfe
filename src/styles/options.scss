@@ -1,0 +1,25 @@
+.options p, .grey-bg {
+  padding: var(--padding);
+  background-color: hsla(225, 94%, 6%, 0.541);
+}
+
+.options {
+  input, p {
+    font-size: .8em;
+  }
+
+  input {
+    border-radius: 0 !important;
+  }
+}
+
+.controls {
+  width: calc(250px);
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.react-colorful__saturation,
+.react-colorful__last-control {
+  border-radius: 0 !important;
+}

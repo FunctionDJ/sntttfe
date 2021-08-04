@@ -1,0 +1,17 @@
+.button-group {
+  display: flex;
+
+  > * {
+    border-radius: 0;
+    font-size: 1.5em;
+    padding: 0 .35em;
+  }
+
+  > *:first-child {
+    border-radius: var(--br) 0 0 var(--br);
+  }
+  
+  > *:last-child {
+    border-radius: 0 var(--br) var(--br) 0;
+  }
+}

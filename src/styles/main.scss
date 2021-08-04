@@ -1,0 +1,48 @@
+@import "view";
+@import "input-button";
+@import "options";
+
+@font-face {
+  font-family: "that one eposvox font";
+  src: url(VCR_OSD_MONO.ttf);
+}
+
+* {
+  font-family: "that one eposvox font", fantasy, monospace;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 1.1rem;
+  --br: .3em;
+  --padding: .4em .7em;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+
+  > *:not(:last-child) {
+    margin-right: 1rem;
+  }
+}
+
+.flex {
+  display: flex;
+
+  &.columns > *:not(:last-child) {
+    margin-right: 1rem;
+  }
+
+  &.rows {
+    flex-direction: column;
+
+    > *:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+}

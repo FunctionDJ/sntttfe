@@ -1,0 +1,38 @@
+.topic > *:not(:last-child) {
+  margin-right: .5rem !important;
+}
+
+.topic-button, .topic-input {
+  text-align: left;
+  transition:
+    color .3s ease,
+    margin-left .3s ease,
+    background-color .3s ease,
+  ;
+}
+
+.button-group {
+  display: flex;
+
+  > * {
+    border-radius: 0;
+    font-size: 1.2em;
+    padding: 0 .5em;
+  }
+
+  > *:first-child {
+    border-radius: var(--br) 0 0 var(--br);
+  }
+  
+  > *:last-child {
+    border-radius: 0 var(--br) var(--br) 0;
+  }
+}
+
+.credits {
+  min-width: 100%;
+
+  * {
+    font-size: 1rem;
+  }
+}
